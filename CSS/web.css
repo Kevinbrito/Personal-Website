@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #32eed5;
+    --text-secondary: #ececec;
+    --bg-primary: #1b1b2b;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+
+/* Small screens */
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        top: 0%;
+        width: 100vw;
+        height: 3rem;
+        position: fixed;
+        background-color: var(--bg-primary);
+        transition: width 200ms ease;
+        border: 2px solid #1d5f56;
+        z-index: 100;
+    }
+    .nav-logo-img {
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link {
+        justify-content: center;
+        padding: 2%;
+        margin: 1;
+        color: var(--text-primary);
+    }
+    .link-text {
+        display: none;
+        margin-left: 1rem;
+    }
+    /* Nomral Logo */
+    .logo {
+        width: 150px;
+        position: absolute;
+        top: 8%;
+        left: 30%;
+    }
+    /* White Logo */
+    .logo-white {
+        width: 150px;
+        position: absolute;
+        top: 24%;
+        left: 30%;
+    }
+    /* Black Logo */
+    .logo-black {
+        width: 150px;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0%;
+        width: 3rem;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--bg-primary);
+        transition: width 300ms ease;
+        border: 2px solid #1d5f56;
+        z-index: 1;
+    }
+    .navbar:hover {
+        width: 8rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+    .nav-logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .nav-logo-img {
+        transform: rotate(0deg);
+        transition: transform var(--transition-speed);
+    }
+    .navbar-nav {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+        justify-self: center;
+        display: flex;
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 3rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        filter: grayscale(100%) opacity(0.7);
+        top: 30%;
+        position: relative;
+    }
+    .nav-link:hover {
+        filter: grayscale(0%) opacity(1);
+        color: var(--text-primary);
+    }
+    .link-text {
+        display: none;
+        margin-left: 1rem;
+        font-family: 'Caveat', cursive;
+        justify-content: center;
+    }
+    .navbar:hover .nav-logo-img {
+        transform: rotate(-540deg);
+    }
+    /* Nomral Logo */
+    .logo {
+        width: 300px;
+        position: absolute;
+        animation: spin 5s linear infinite;
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate3d(2, 2, 2, -360deg);
+        }
+    }
+    /* White Logo */
+    .logo-white {
+        width: 300px;
+        position: fixed;
+        animation: spin-white 8s linear infinite;
+    }
+    @keyframes spin-white {
+        100% {
+            transform: rotate3d(1, 1, 1, 360deg);
+        }
+    }
+    /* Black Logo */
+    .logo-black {
+        width: 300px;
+        position: fixed;
+        animation: spin-black 6.5s linear infinite;
+    }
+
+    @keyframes spin-black {
+        100% {
+            transform: rotate3d(2, 2, 1, 360deg);
+        }
+    }
+
+    /* Logo control */
+    #logos {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        animation: orbit 7s linear infinite;
+    }
+
+    .circle {
+        top: 40%;
+        left: 46.5%;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        opacity: 1;
+        animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+
+    .circle1 {
+        top: 40%;
+        left: 46.5%;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        opacity: 1;
+        animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+
+    .circle2 {
+        top: 40%;
+        left: 46.5%;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        opacity: 1;
+        animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+
+    .circle3 {
+        top: 40%;
+        left: 46.5%;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        opacity: 1;
+        animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+
+    .black-logo-circle {
+        top: 40%;
+        left: 46.5%;
+        border-radius: 50%;
+        position: absolute;
+        background-color: orange;
+        width: 10px;
+        height: 10px;
+    }
+
+    @keyframes scaleIn {
+        from {
+          transform: scale(.5, .5);
+          opacity: .5;
+        }
+        to {
+          transform: scale(2.5, 2.5);
+          opacity: 0;
+        }
+      }
+
+    @keyframes orbit {
+        from {
+            border-radius: 50%;
+
+        }
+        to {
+            border-radius: 100%;
+            transform: rotateZ(360deg);
+        }
+    }
+
+    #blue-logo {
+        width: 150px;
+        left: 46.4%;
+        top: 51%;
+        position: absolute;
+        animation: breathing 5s infinite normal;
+    }
+
+    #black-logo {
+        width: 150px;
+        left: 43.5%;
+        top: 42%;
+        position: absolute;
+        animation: breathing 5s infinite normal;
+    }
+
+    #white-logo {
+        width: 150px;
+        left: 49.5%;
+        top: 42%;
+        position: absolute;
+        animation: breathing 5s ease-out infinite normal;
+    }
+
+    @keyframes breathing {
+        0% {
+          transform: scale(0.9);
+        }
+      
+        25% {
+          transform: scale(1);
+        }
+      
+        60% {
+          transform: scale(0.9);
+        }
+      
+        100% {
+          transform: scale(0.9);
+        }
+      }
+
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17182f;
+    overflow: hidden;
+}
+
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+canvas {
+    display: block;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

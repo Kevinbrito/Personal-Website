@@ -1,0 +1,65 @@
+.spaceButton {
+    position: absolute;
+    top: 83%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+/* Button Manipulation */
+button.learn-more {
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: cursive;
+    color: #32eed5;
+    text-transform: uppercase;
+    padding: 0.20em 0.20em;
+    background: #17182f;
+    border: 2px solid #9bf1f1;
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.learn-more::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #17182f;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #9bf1f1, 0 0.625em 0 0 #17182f;
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+            transform: translate3d(0, 0.75em, -1em);
+    -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.learn-more:hover {
+    background: #17182f;
+    -webkit-transform: translate(0, 0.25em);
+            transform: translate(0, 0.25em);
+  }
+  button.learn-more:hover::before {
+    box-shadow: 0 0 0 2px #9bf1f1, 0 0.5em 0 0 #535753;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+            transform: translate3d(0, 0.5em, -1em);
+  }
+  button.learn-more:active {
+    background: #778075;
+    -webkit-transform: translate(0em, 0.75em);
+            transform: translate(0em, 0.75em);
+  }
+  button.learn-more:active::before {
+    box-shadow: 0 0 0 2px #b5d4cb, 0 0 #648864;
+    -webkit-transform: translate3d(0, 0, -1em);
+            transform: translate3d(0, 0, -1em);
+  }
