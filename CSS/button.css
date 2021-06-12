@@ -1,7 +1,14 @@
+.recruitButton {
+    position: absolute;
+    top: 88.9%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+}
+
 .spaceButton {
     position: absolute;
     top: 83%;
-    left: 51%;
+    left: 50.5%;
     transform: translate(-50%, -50%);
 }
 

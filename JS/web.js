@@ -1,5 +1,6 @@
 $("#continueButton").click(function() {
     if (screen.width >= 600) {
+        // Starts display 
         $("#continueButton").fadeOut("slow");
         $(".logo-black").delay(1000).fadeOut();
         $(".logo-white").delay(2000).fadeOut();
@@ -16,10 +17,10 @@ $("#continueButton").click(function() {
         });
         $("#blue-logo").delay(4000).fadeIn();
         $("#blue-logo").delay(4000).animate({
-            top: '75%',
+            top: '74%',
         });
         $(".typeText").delay(4000).fadeIn();
-
+        // Functions and effects for when hovering over the floating black logo
         $("#black-logo").mouseover(function() {
             $(".circle").show();
             $(".circle").css("background-color", "#033dfc");
@@ -38,7 +39,7 @@ $("#continueButton").click(function() {
             $(".circle2").hide();
             $(".circle3").hide();
         });
-
+        // Functions and effects for when hovering over the floating blue logo
         $("#blue-logo").mouseover(function() {
             $(".circle").show();
             $(".circle").css("background-color", "#E0FF89");
@@ -56,7 +57,7 @@ $("#continueButton").click(function() {
             $(".circle2").hide();
             $(".circle3").hide();
         });
-
+    // Functions and effects for when hovering over the floating white logo
         $("#white-logo").mouseover(function() {
             $(".circle").show();
             $(".circle").css("background-color", "#B844DB");
@@ -75,7 +76,7 @@ $("#continueButton").click(function() {
             $(".circle3").hide();
         });
     };
-
+    // For mobile screens and other small screens
     if (screen.width < 600) {
         $("#continueButton").fadeOut("slow");
         // Moving logos to new location
