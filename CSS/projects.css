@@ -1,0 +1,157 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --project-borders: #3532ee;
+}
+
+.gentrification {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: center;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.muscles {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.weather {
+    background-color: rgba(255, 255, 255, 0.2);
+    background: -webkit-linear-gradient(to left, #e4e5eb, #8fe91b);
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.aquatics {
+    background-color: rgba(255, 255, 255, 0.2);
+    background: -webkit-linear-gradient(to left, #e4e5eb, #8fe91b);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.mozilla {
+    background-color: rgba(255, 255, 255, 0.2);
+    background: -webkit-linear-gradient(to left, #e4e5eb, #8fe91b);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.handshake {
+    background-color: rgba(255, 255, 255, 0.2);
+    background: -webkit-linear-gradient(to left, #e4e5eb, #8fe91b);
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    text-align: center;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+
+
+#city {
+    background-image: linear-gradient(45deg, #222020, #3123b3, #fb6006);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#weights {
+    background-image: linear-gradient(45deg, #080808, #080808, #080808, #686868, #080808, #080808);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#sun-cloud {
+    background-image: linear-gradient(45deg, #d9ff00, #ffbb00, #ffffff, #ffffff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#swimmer {
+    background-image: linear-gradient(45deg, #0d7269, #7fd19e, #ffffff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#firefox {
+    background-image: linear-gradient(45deg, #ff0000, #ffd102, #5900ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#shake {
+    background-image: linear-gradient(45deg, #4b1f03, #6e5c08, #4b1f03);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+
+/* .gentrification:hover{
+    width: 17em;
+    height: 12em;
+    background-color: #161618;
+} */
