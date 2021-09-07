@@ -11,5 +11,13 @@ $("#no-time").click(function() {
         $(".home").delay(500).fadeOut("slow");
         $(".resume").delay(1200).fadeOut("slow");
         $(".busy-work").delay(3000).fadeIn("slow");
+        $(".experiences").delay(4000).fadeIn();
+        // Show detailed bubbles for each experience on hover
+        $(".gentrification").mouseover(function() {
+            $(".gentrification-exp").show();
+        })
+        $(".gentrification").mouseleave(function() {
+            $(".gentrification-exp").hide();
+        })
     }
 });

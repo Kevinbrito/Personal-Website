@@ -1,0 +1,28 @@
+.gentrification-exp {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 33%;
+    /* border-style: */
+    border-color: rgba(216, 40, 40, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center;
+    padding: 1em;
+    width: 15em;
+    height: 15em;
+    animation: breathing 10s ease-out infinite normal;
+}
+
+#gent-header {
+    background-image: linear-gradient(45deg, #fb6006, #3123b3, #fb6006);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#gent-paragraph {
+    text-align:  left;
+}
